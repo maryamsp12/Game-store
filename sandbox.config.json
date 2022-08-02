@@ -1,0 +1,5 @@
+{
+  "template": "parcel",
+  "startScript": "start",
+  "node": "16"
+}

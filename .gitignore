@@ -1,0 +1,8 @@
+.parcel-cache/
+dist/*
+node_modules/
+*.xd
+*.tgz
+
+.idea/
+.vscode/

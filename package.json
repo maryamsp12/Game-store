@@ -1,0 +1,55 @@
+{
+  "private": true,
+  "name": "game-store-project",
+  "version": "2.0.0",
+  "description": "React with typescript. Mobile first approach. Semantic UI. No external library used. Search history is stored in local storage",
+  "homepage": "https://github.com/AndreasLindbergPAF/paf-frontend-exercise",
+  "bugs": {
+    "url": "https://github.com/AndreasLindbergPAF/paf-frontend-exercise/issues"
+  },
+  "author": "Andreas Lindberg <andreas.lindberg@paf.com> (https://aboutpaf.com/)",
+  "contributors": [
+    "Johan Westling",
+    "Andreas Lindberg",
+    "Olof Schröder"
+  ],
+  "license": "ISC",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "4.4.0"
+  },
+  "devDependencies": {
+    "@parcel/config-default": "^2.6.0",
+    "@parcel/transformer-typescript-tsc": "^2.6.0",
+    "@types/react": "^18.0.13",
+    "@types/react-dom": "^18.0.5",
+    "parcel": "^2.6.0",
+    "parcel-reporter-multiple-file-copier": "^1.0.7",
+    "process": "^0.11.10",
+    "typescript": "^4.7.3"
+  },
+  "staticFiles": [
+    {
+      "origin": "api",
+      "destination": "api/"
+    },
+    {
+      "origin": "resources",
+      "destination": "resources/"
+    }
+  ],
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "engines": {
+    "node": "^14.8 || ^16",
+    "npm": "^6.14.8 || >8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AndreasLindbergPAF/paf-frontend-exercise.git"
+  },
+  "keywords": []
+}

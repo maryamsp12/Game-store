@@ -1,0 +1,174 @@
+:root {
+  --primary: #8c709d;
+  --secondary: #d2d2e1;
+}
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--secondary);
+}
+h1 {
+  color: #000000;
+  font-weight: bold;
+  font-size: 2em;
+}
+h2 {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+.itemTitle {
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+/*  mobile styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.categoryBox figure * {
+  margin: 0 20px;
+  max-width: 50%;
+  align-self: center;
+}
+.title {
+  grid-column: 1/9;
+  text-align: center;
+  padding-top: 10px;
+}
+.categoryTitle {
+  grid-column: 1/9;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.saperation {
+  display: none;
+  border-bottom: solid 1px black;
+}
+.description {
+  grid-column: 2/8;
+  text-align: center;
+  padding: 10px 0;
+}
+.itemBox {
+  display: flex;
+  grid-column: 1/9;
+  text-align: center;
+  background: #8c709d;
+  padding: 20px;
+}
+.img {
+  height: 180px;
+  margin: 10px auto;
+}
+
+.wrapper {
+  grid-column: 3/6;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  background: black;
+}
+.wrapper .input {
+  width: 85%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.searchBtn {
+  background: var(--primary);
+  width: 15%;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.searchBtn .fas {
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 18px;
+}
+.searchPanel {
+  display: flex;
+  justify-content: center;
+}
+.searchBtn .fas {
+  font-size: 10px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+/*  small tablet styles */
+@media screen and (min-width: 620px) {
+  .itemBox {
+    display: block;
+    grid-column: span 4;
+    text-align: center;
+    background: #8c709d;
+    padding: 20px;
+  }
+  .categoryBox figure * {
+    margin: 0 20px;
+    max-width: 100%;
+    align-self: center;
+  }
+}
+
+/*  large tablets  desktop styles */
+@media screen and (min-width: 960px) {
+  /* 1175 */
+  body {
+    font-size: 18px;
+  }
+  .grid {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+  .categoryBox {
+    margin: 40px auto;
+  }
+  .itemBox {
+    grid-column: span 2;
+  }
+  .categoryBox figure * {
+    margin: 0 0;
+    max-width: 100%;
+    align-self: center;
+  }
+  .wrapper {
+    grid-column: 3/7;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    background: black;
+  }
+}
+
+/*  desktop styles */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 24px;
+  }
+  .itemBox {
+    grid-column: span 2;
+    text-align: center;
+    background: #8c709d;
+    padding: 20px;
+  }
+  .wrapper {
+    grid-column: 3/7;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    background: black;
+  }
+}

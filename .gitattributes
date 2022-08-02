@@ -1,0 +1,30 @@
+*                 text=auto
+
+# Styles
+*.css             text
+*.scss            text diff=css
+
+# Markup
+*.htm             text diff=html
+*.html            text diff=html
+
+# Script
+*.js              text
+*.jsx             text
+*.ts              text
+*.tsx             text
+
+# Assets
+*.json            text
+*.png             binary
+
+# Doc
+*.md              text
+CODEOWNERS        text
+
+# Config
+.gitattributes    text
+.*ignore        text
+package-lock.json text -diff
+*.lock            text -diff
+.*rc            text
